@@ -16,11 +16,8 @@ const moveZeros = function (arr) {
 
 
 //ES6 style
-const moveZeros = (arr) => {
-	return arr.filter(value => value !== 0).map()
-	//ToDo:
-	//	substitute the for loop with a map function
-	//	solve the "diff"-problem
+var moveZeros = function (arr) {
+  return arr.filter(function(x) {return x !== 0}).concat(arr.filter(function(x) {return x === 0;}));
 }
 
 // Test
